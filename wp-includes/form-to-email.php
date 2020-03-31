@@ -64,3 +64,29 @@ function IsInjected($str)
 }
    
 ?> 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<style>
+a 
+{
+  font-family : Arial, Helvetica, sans-serif;
+  font-size : 14px; 
+}
+
+</style>
+<p>
+  PHP not supported!
+</p>
+<p>
+<a href='https://guizfinecodes.github.io/index.html#Contact'
+><button style="text-decoration-color: transparent; background-color: orange;">Go back</button></a>
+</p>
+
+</body>
+</html>
