@@ -804,27 +804,19 @@ High School: Grade B+
 <div class="col span_6">
   <label for="tel-no">Telephone Number</label><br />
     <span class="wpcf7-form-control-wrap tel-no">
-        <input type="tel" name="phone" class="phone" value="" required="" placeholder="Phone ie 0712345678" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" /></span> 
+        <input type="tel" name="phone" class="phone" value="" placeholder="Phone ie 0712345678" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" /></span> 
 </div>
 </div>
 
 <!-- find how to make it requred-->
-<p>
 <label for="subject">Subject</label><br />
-  <span class="wpcf7-form-control-wrap subject">
-    <select class="subject" name="subject" class="form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" required="" aria-invalid="false">
-    <option value="">---choose please---</option>
-    <option value="Job offer/Contracts">Job offer/Contracts</option>
-    <option value="Suggestions/Questions/Enquiry">Suggestions/Questions/Enquiry</option>
-    <option value="Donation">Donation</option>
-    <option value="Others">Others</option>
-  </select>
-</span>
-</p>
-<p>  <label for="Description">Please Enter Details of the inquiry</label><br />
+ <span class="wpcf7-form-control-wrap subject">
+        <input type="text" name="subjects" value="" required="" class="subjects" placeholder="Enter subject" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" />
+    </span>
+
+ <label for="Description">Please Enter Details of the inquiry</label><br />
     <span class="wpcf7-form-control-wrap description">
         <textarea name="message" cols="40" required="" class="message" placeholder="Enter some details in brief." rows="3" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea></span> 
-</p>
 <p><br/>
     <input type="text" name="_gotcha" style="display:none" />
     <input type="submit" name="submit" class="submit" value="Send Message" class="wpcf7-form-control wpcf7-submit" />
@@ -833,7 +825,7 @@ High School: Grade B+
 <div class="wpcf7-response-output wpcf7-display-none">
     
 </div>
-<div class="status"></div>
+<div class="status" style="border-width: 2px; background-color: #888; color: red;"></div>
 </form>
 
 </div>

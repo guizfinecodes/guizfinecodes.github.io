@@ -1,4 +1,4 @@
-console.log('form on dom')
+console.log('form ready')
 $(document).ready(function () {
 	$('.submit').click(function (event) {
 		console.log('clicked button')
@@ -6,7 +6,7 @@ $(document).ready(function () {
 		var name = $('.name').val()
 		var email = $('.email').val()
 		var phone = $('.phone').val()
-		var subject = $('.subject').val()
+		var subject = $('.subjects').val()
 		var message = $('.message').val()
 		var statusElm = $('.status')
 		statusElm.empty()
@@ -16,31 +16,30 @@ $(document).ready(function () {
 			console.log( 'name is valid')
 		}else {
 			event.preventDefault()
-			statusElm.append('<div>Name is not valid</div>')
+			statusElm.append('<div>Name is not valid(At least 4 characters)</div>')
 		}
 
-		if (email.length > 8 && email.includes('@') && email.includes('.')) {
+		if (email.length > 5 && email.includes('@') && email.includes('.')) {
 			console.log( 'email is valid')
 		}else {
 			event.preventDefault()
 			statusElm.append('<div>Email is not valid</div>')
 		}
 
-		if (phone.value = /^\d{10}$/;) {
-			console.log( 'phone is valid')
+		if (subject.length > 3 ) {
+			console.log( 'subject is valid')
 		}else {
 			event.preventDefault()
-			alert("Not a valid Phone Number (10 digits)");
-     	return false;
+			statusElm.append('<div>Subject is too short(4 or more characters)</div>')
 		}
 
-		if (message.length >= 5) {
+
+		if (message.length >= 4) {
 			console.log( 'message is valid')
 		}else {
 			event.preventDefault()
-			statusElm.append('<div>Message is too short</div>')
+			statusElm.append('<div>Message is too short(5 or more characters)</div>')
 		}
-
 
 	})
 
