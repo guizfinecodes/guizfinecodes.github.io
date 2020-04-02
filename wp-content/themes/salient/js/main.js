@@ -26,12 +26,34 @@ $(document).ready(function () {
 			statusElm.append('<div>Email is not valid</div>')
 		}
 
+		if (phone.value = /^\d{10}$/;) {
+			console.log( 'phone is valid')
+		}else {
+			event.preventDefault()
+			alert("Not a valid Phone Number (10 digits)");
+     	return false;
+		}
+
 		if (message.length >= 5) {
 			console.log( 'message is valid')
 		}else {
 			event.preventDefault()
 			statusElm.append('<div>Message is too short</div>')
 		}
+
+		function phonenumber(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if(inputtxt.value.match(phoneno))
+  {
+      return true;
+  }
+  else
+  {
+     alert("Not a valid Phone Number");
+     return false;
+  }
+  }
 
 
 	})
