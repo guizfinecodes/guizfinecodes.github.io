@@ -41,20 +41,6 @@ $(document).ready(function () {
 			statusElm.append('<div>Message is too short</div>')
 		}
 
-		function phonenumber(inputtxt)
-{
-  var phoneno = /^\d{10}$/;
-  if(inputtxt.value.match(phoneno))
-  {
-      return true;
-  }
-  else
-  {
-     alert("Not a valid Phone Number");
-     return false;
-  }
-  }
-
 
 	})
 
